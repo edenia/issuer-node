@@ -1,0 +1,23 @@
+{
+  "@context": [
+    {
+      "@protected": true,
+      "@version": 1.1,
+      "id": "@id",
+      "type": "@type",
+      "POAP01": {
+        "@context": {
+          "@propagate": true,
+          "@protected": true,
+          "polygon-vocab": "urn:uuid:e9b5e5c4-e56c-4f60-b85b-2974378b0e23#",
+          "xsd": "http://www.w3.org/2001/XMLSchema#",
+          "city": {
+            "@id": "polygon-vocab:city",
+            "@type": "xsd:string"
+          }
+        },
+        "@id": "urn:uuid:6585bbfe-e479-4d8a-afd9-4c7088c72b34"
+      }
+    }
+  ]
+}

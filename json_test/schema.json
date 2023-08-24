@@ -2,7 +2,7 @@
     "data": {
         "$metadata": {
             "uris": {
-                "jsonLdContext": "https://ipfs.io/ipfs/QmTSwnuCB9grYMB2z5EKXDagfChurK5MiMCS6efrRbsyVX"
+                "jsonLdContext": "https://raw.githubusercontent.com/edenia/issuer-node/main/json_test/ldcontext.json"
             },
             "type": "POAP01",
             "version": "0.01"
