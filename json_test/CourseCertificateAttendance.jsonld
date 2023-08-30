@@ -1,0 +1,35 @@
+{
+    "@context": [
+        {
+            "@protected": true,
+            "@version": 1.1,
+            "id": "@id",
+            "type": "@type",
+            "course": {
+                "@context": {
+                    "@propagate": true,
+                    "@protected": true,
+                    "polygon-vocab": "urn:uuid:a3d52c43-ed54-4b61-8b01-e3317894195e#",
+                    "xsd": "http://www.w3.org/2001/XMLSchema#",
+                    "course-name": {
+                        "@id": "polygon-vocab:course-name",
+                        "@type": "xsd:string"
+                    },
+                    "end-date": {
+                        "@id": "polygon-vocab:end-date",
+                        "@type": "xsd:string"
+                    },
+                    "start-date": {
+                        "@id": "polygon-vocab:start-date",
+                        "@type": "xsd:integer"
+                    },
+                    "institution": {
+                        "@id": "polygon-vocab:institution",
+                        "@type": "xsd:string"
+                    }
+                },
+                "@id": "urn:uuid:54f88c44-0a23-42bb-aad0-d87c05152e32"
+            }
+        }
+    ]
+}
