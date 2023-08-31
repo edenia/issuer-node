@@ -1,0 +1,101 @@
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: http-api
+  namespace: polygon
+spec:
+  entryPoints:
+    - web
+  routes:
+    - kind: Rule
+      match: Host(`polygonid-api.edenia.cloud`)
+      services:
+        - kind: Service
+          name: api-issuer-node-svc
+          port: 3001
+---
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: https-api
+  namespace: polygon
+spec:
+  entryPoints:
+    - websecure
+  routes:
+    - kind: Rule
+      match: Host(`polygonid-api.edenia.cloud`)
+      services:
+        - kind: Service
+          name: api-issuer-node-svc
+          port: 3001
+  tls:
+    certResolver: myresolver
+---
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: http-api-ui
+  namespace: polygon
+spec:
+  entryPoints:
+    - web
+  routes:
+    - kind: Rule
+      match: Host(`polygonid-api-ui.edenia.cloud`)
+      services:
+        - kind: Service
+          name: api-ui-issuer-node-svc
+          port: 3002
+---
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: https-api-ui
+  namespace: polygon
+spec:
+  entryPoints:
+    - websecure
+  routes:
+    - kind: Rule
+      match: Host(`polygonid-api-ui.edenia.cloud`)
+      services:
+        - kind: Service
+          name: api-ui-issuer-node-svc
+          port: 3002
+  tls:
+    certResolver: myresolver
+---
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: http-ui
+  namespace: polygon
+spec:
+  entryPoints:
+    - web
+  routes:
+    - kind: Rule
+      match: Host(`polygonid-ui.edenia.cloud`) && PathPrefix(`/`)
+      services:
+        - kind: Service
+          name: ui-issuer-node-svc
+          port: 8080
+---
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: https-ui
+  namespace: polygon
+spec:
+  entryPoints:
+    - websecure
+  routes:
+    - kind: Rule
+      match: Host(`polygonid-ui.edenia.cloud`) && PathPrefix(`/`)
+      services:
+        - kind: Service
+          name: ui-issuer-node-svc
+          port: 8080
+  tls:
+    certResolver: myresolver
