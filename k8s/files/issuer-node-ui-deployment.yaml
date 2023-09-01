@@ -16,14 +16,13 @@ spec:
     spec:
       containers:
         - name: ui
-          image: 0xpolygon/issuernode-ui
+          image: ghcr.io/edenia/issuer-node:latest
           imagePullPolicy: "Always"
           ports:
             - containerPort: 80
           envFrom:
             - configMapRef:
                 name: issuer-node-ui-configmap
-          
           livenessProbe:
            httpGet:
              path: /health
@@ -33,4 +32,3 @@ spec:
                value: Awesome
            initialDelaySeconds: 60
            periodSeconds: 300
-      
