@@ -98,7 +98,7 @@ export const theme: ThemeConfig = {
     colorText: textColor,
     colorTextLabel: tagColor,
     colorTextSecondary: textColorSecondary,
-    fontFamily: "ModernEra-Regular",
+    fontFamily: "Roboto-Regular",
     fontSize: 16,
     fontSizeHeading2: 32,
     fontSizeSM: 14,

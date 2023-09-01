@@ -1,11 +1,11 @@
 @import "variables.module";
 
 @font-face {
-  font-family: "ModernEra-Regular";
+  font-family: "Roboto-Regular";
   font-style: normal;
   font-weight: normal;
-  src: local("ModernEra-Regular"), url("/fonts/ModernEra-Regular.woff2") format("woff2"),
-    url("/fonts/ModernEra-Regular.woff") format("woff");
+  src: local("Roboto-Regular"), url("/fonts/Roboto-Regular.woff") format("woff2"),
+    url("/fonts/Roboto-Regular.woff") format("woff");
 }
 
 /* OVERRIDES */
