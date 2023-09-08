@@ -1,7 +1,7 @@
 {
     "$metadata": {
         "uris": {
-            "jsonLdContext": "https://raw.githubusercontent.com/edenia/issuer-node/main/json_test/CourseCertificateAttendance.jsonld"
+            "jsonLdContext": "https://raw.githubusercontent.com/edenia/issuer-node/main/json_test/CourseCertificateAttendance.json-ld"
         },
         "version": "1.0",
         "type": "course"

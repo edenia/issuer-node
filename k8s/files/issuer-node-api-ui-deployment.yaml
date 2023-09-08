@@ -16,7 +16,7 @@ spec:
     spec:
       initContainers:
         - name: init-vault-check
-          image: 0xpolygon/issuernode:latest
+          image: ghcr.io/edenia/issuer-node:api
           imagePullPolicy: "Always"
           envFrom:
             - configMapRef:
@@ -34,7 +34,7 @@ spec:
               name: vault-volume
 
         - name: did-initializer
-          image: 0xpolygon/issuernode:latest
+          image: ghcr.io/edenia/issuer-node:api
           imagePullPolicy: "Always"
           envFrom:
             - configMapRef:
@@ -59,7 +59,7 @@ spec:
 
       containers:
         - name: api-ui
-          image: 0xpolygon/issuernode:latest
+          image: ghcr.io/edenia/issuer-node:api
           imagePullPolicy: "Always"
           ports:
             - containerPort: 3002

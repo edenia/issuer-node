@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: ui
-          image: ghcr.io/edenia/issuer-node:latest
+          image: ghcr.io/edenia/issuer-node:ui
           imagePullPolicy: "Always"
           ports:
             - containerPort: 80
