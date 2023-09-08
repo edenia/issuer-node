@@ -5,7 +5,7 @@
             "@version": 1.1,
             "id": "@id",
             "type": "@type",
-            "course": {
+            "course-certificate": {
                 "@context": {
                     "@propagate": true,
                     "@protected": true,

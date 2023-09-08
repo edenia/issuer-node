@@ -4,7 +4,7 @@
             "jsonLdContext": "https://raw.githubusercontent.com/edenia/issuer-node/main/json_test/CourseCertificateAttendance.json-ld"
         },
         "version": "1.0",
-        "type": "course"
+        "type": "course-certificate"
     },
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "description": "Course Certificate of attendance",
